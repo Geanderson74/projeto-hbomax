@@ -11,14 +11,18 @@
 </head>
 <body>
 
+    <!-- CABEÇALHO DA PÁGINA -->
     <header>
         <div class="grid">
             <div class="logo">
-                <img src="img/hbo-max.svg" alt="logo HBO Max">
+                <a href="https://www.hbomax.com/br/pt">
+                    <img src="img/hbo-max.svg" alt="logo HBO Max">
+                </a>
             </div>
         </div>
     </header>
 
+    <!-- SEÇÃO FORMULÁRIO -->
     <section>
         <div class="grid">
             <div class="title">
@@ -27,13 +31,25 @@
 
             <div class="formulario">
                 <form>
-                    <input class="mail" type="email" name="email" id="email" placeholder="Endereço de e-mail">
-                    <input class="senha" type="password" name="senha" id="senha" placeholder="Senha">
+                    <div class="email">
+                        <input class="mail" type="email" name="email" id="email" required>
+                        <span>Endereço de e-mail</span>
+                    </div>
+                    <div class="senha">
+                        <input class="password" type="password" name="senha" id="senha" required>
+                        <span>Senha</span>
+                        <i class="bi bi-eye"></i>
+                    </div>
                 </form>
                 <button class="btn-entrar">Entrar</button>
                 <button class="btn-provedor">Entrar com um provedor</button>
             </div>
         </div>
+    </section>
+    
+    <!-- SEÇÃO INFORMAÇÕES -->
+    <section>
+        
     </section>
     
 </body>
