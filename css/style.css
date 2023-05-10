@@ -47,6 +47,12 @@ header .grid .logo img{
     width: 12rem;
 }
 
+/* SEÇÃO FORMULÁRIO */
+
+section .grid{
+    padding-top: 6rem;
+}
+
 section .grid .title{
     display: flex;
     justify-content: center;
@@ -54,16 +60,17 @@ section .grid .title{
 }
 
 section .grid .title h1{
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 3.2rem;
+    font-weight: 600;
 }
 
 section .grid .formulario{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 48rem;
+    max-width: 45rem;
     margin: 0 auto;
+    padding-top: 4rem;
 }
 
 section .grid .formulario form{
@@ -71,30 +78,82 @@ section .grid .formulario form{
     flex-direction: column;
 }
 
-section .grid .formulario form .mail{
+section .grid .formulario form .email{
+    position: relative;
+    margin-bottom: -4rem;
+}
+
+section .grid .formulario form .email .mail{
     font-size: 2rem;
     padding-bottom: 0.8rem;
     background-color: rgba(0,0,0,0);
     outline: none;
-    border-bottom: 2px solid #999999;
+    border-bottom: 0.2rem solid #acaaaa;
+    margin-bottom: 5.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 3rem;
+    width: 100%;
+    color: #ffffff;
+}
+
+section .grid .formulario form .email span{
+    position: absolute;
+    color: #acaaaa;
+    top: 3rem;
+    left: 0;
+    font-size: 1.8rem;
+    pointer-events: none;
+    transition: .3s;
 }
 
 section .grid .formulario form .senha{
+    position: relative;
+}
+
+section .grid .formulario form .senha span{
+    position: absolute;
+    color: #acaaaa;
+    top: 3rem;
+    left: 0;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+
+section .grid .formulario form .senha .password{
     font-size: 2rem;
     padding-bottom: 0.8rem;
     background-color: rgba(0,0,0,0);
     outline: none;
-    border-bottom: 2px solid #999999;
+    border-bottom: 0.2rem solid #acaaaa;
+    margin-bottom: 5.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 3rem;
+    width: 100%;
+    color: #ffffff;
 }
 
-section .grid .formulario button{
-    cursor: pointer;
+section .grid .formulario form .senha i{
+    color: #acaaaa;
+    position: absolute;
+    right: 0;
+    top: 2.7rem;
+    font-size: 2rem;
+}
+
+/* EFEITO DE FLUATUAÇÃO NO SPAN DOS CAMPOS INPUT */
+
+section .grid .formulario form .email input:focus ~ span,
+section .grid .formulario form .email input:valid ~ span,
+section .grid .formulario form .senha input:focus ~ span,
+section .grid .formulario form .senha input:valid ~ span{
+    transform: translateY(-1.8rem);
+    font-size: 1.4rem;
 }
 
 section .grid .formulario .btn-entrar{
     background-color: #7b2abf;
     font-size: 1.7rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     font-family: 'Gilroy', sans-serif;
     color: #f0f0f0;
@@ -102,6 +161,13 @@ section .grid .formulario .btn-entrar{
     min-width: 31.6rem;
     border-radius: 3rem;
     margin: 0 auto;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+section .grid .formulario .btn-entrar:hover{
+    background-color: #9420f3;
 }
 
 section .grid .formulario .btn-provedor{
@@ -116,4 +182,12 @@ section .grid .formulario .btn-provedor{
     border-radius: 3rem;
     border: 2px solid #f0f0f0;
     margin: 0 auto;
+    cursor: pointer;
+    transition: ease .5s;
 }
+
+section .grid .formulario .btn-provedor:hover{
+    border: 2px solid #7b2abf;
+}
+
+/* SEÇÃO INFORMAÇÕES */
