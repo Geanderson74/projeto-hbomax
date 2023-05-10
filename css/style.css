@@ -4,9 +4,116 @@
     border: 0;
     margin: 0;
     list-style: none;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Gilroy-normal', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.grid{
+    max-width: 192rem;
+    padding: 0 0.8rem;
+    margin: 0 auto;
 }
 
 a{
     text-decoration: none;
+}
+
+/* TELA DE LOGIN */
+
+body{
+    background-image: url(../img/bg-gradient.jpg);
+}
+
+header{
+    background-color: rgba(0,0,0,.4);
+    height: 6.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .grid .logo img{
+    height: 3.2rem;
+    width: 12rem;
+}
+
+section .grid .title{
+    display: flex;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+section .grid .title h1{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+section .grid .formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+section .grid .formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+section .grid .formulario form .mail{
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border-bottom: 2px solid #999999;
+}
+
+section .grid .formulario form .senha{
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border-bottom: 2px solid #999999;
+}
+
+section .grid .formulario button{
+    cursor: pointer;
+}
+
+section .grid .formulario .btn-entrar{
+    background-color: #7b2abf;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Gilroy', sans-serif;
+    color: #f0f0f0;
+    padding: 1.5rem 3.6rem;
+    min-width: 31.6rem;
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
+section .grid .formulario .btn-provedor{
+    background-color: rgba(0,0,0,0);
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Gilroy', sans-serif;
+    color: #f0f0f0;
+    padding: 1.5rem 3.6rem;
+    min-width: 31.6rem;
+    border-radius: 3rem;
+    border: 2px solid #f0f0f0;
+    margin: 0 auto;
 }
