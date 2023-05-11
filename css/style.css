@@ -33,6 +33,8 @@ body{
     background-image: url(../img/bg-gradient.jpg);
 }
 
+/* CABEÇALHO DA PÁGINA */
+
 header{
     background-color: rgba(0,0,0,.4);
     height: 6.4rem;
@@ -49,14 +51,11 @@ header .grid .logo img{
 
 /* SEÇÃO FORMULÁRIO */
 
-section .grid{
-    padding-top: 6rem;
-}
-
 section .grid .title{
     display: flex;
     justify-content: center;
     color: #f0f0f0;
+    margin-top: 6rem;
 }
 
 section .grid .title h1{
@@ -77,6 +76,8 @@ section .grid .formulario form{
     display: flex;
     flex-direction: column;
 }
+
+/* PARTE DO EMAIL */
 
 section .grid .formulario form .email{
     position: relative;
@@ -106,6 +107,8 @@ section .grid .formulario form .email span{
     transition: .3s;
 }
 
+/* PARTE DA SENHA */
+
 section .grid .formulario form .senha{
     position: relative;
 }
@@ -132,6 +135,7 @@ section .grid .formulario form .senha .password{
     color: #ffffff;
 }
 
+/* ICONE DO CAMPO SENHA */
 section .grid .formulario form .senha i{
     color: #acaaaa;
     position: absolute;
@@ -186,9 +190,72 @@ section .grid .formulario .btn-provedor{
     transition: ease .5s;
 }
 
+section .grid .formulario .btn-provedor a{
+    color: #f0f0f0;
+    font-family: 'Gilroy', sans-serif;
+}
+
 section .grid .formulario .btn-provedor:hover{
     border: 2px solid #7b2abf;
 }
 
 /* SEÇÃO INFORMAÇÕES */
 
+.links{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links .criar-conta span{
+    color: #F0F0F0;
+    font-size: 1.4rem;
+}
+
+.links .criar-conta span a{
+    color: #bac7ff;
+}
+
+.links .esqueceu-senha{
+    margin-top: 2rem;
+}
+
+.links .esqueceu-senha a{
+    font-size: 1.4rem;
+    color: #bac7ff;
+}
+
+/* RODAPÉ DA PÁGINA */
+
+footer{
+    background-color: #0f0535;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 35px 0;
+}
+
+.link-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.link-footer ul{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.link-footer ul li a{
+    color: #9e86ff;
+    font-size: 1.6rem;
+}
+
+.link-footer ul .brasil a{
+    font-size: 1.3rem;
+}
+
+.link-footer ul li a .globo{
+    font-size: 1rem;
+}
