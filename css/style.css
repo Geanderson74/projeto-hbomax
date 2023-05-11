@@ -200,3 +200,62 @@ section .grid .formulario .btn-provedor:hover{
 }
 
 /* SEÇÃO INFORMAÇÕES */
+
+.links{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links .criar-conta span{
+    color: #F0F0F0;
+    font-size: 1.4rem;
+}
+
+.links .criar-conta span a{
+    color: #bac7ff;
+}
+
+.links .esqueceu-senha{
+    margin-top: 2rem;
+}
+
+.links .esqueceu-senha a{
+    font-size: 1.4rem;
+    color: #bac7ff;
+}
+
+/* RODAPÉ DA PÁGINA */
+
+footer{
+    background-color: #0f0535;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 35px 0;
+}
+
+.link-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.link-footer ul{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.link-footer ul li a{
+    color: #9e86ff;
+    font-size: 1.6rem;
+}
+
+.link-footer ul .brasil a{
+    font-size: 1.3rem;
+}
+
+.link-footer ul li a .globo-rodape{
+    font-size: 1rem;
+}
