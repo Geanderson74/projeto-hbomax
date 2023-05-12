@@ -170,6 +170,8 @@ section .grid .formulario form .senha input:valid ~ span{
     font-size: 1.4rem;
 }
 
+/* =============================================== */
+
 section .grid .formulario .btn-entrar{
     background-color: #7b2abf;
     font-size: 1.7rem;
@@ -337,12 +339,15 @@ header .link-entrar a{
     font-size: 1.6rem;
     padding: 1.8rem 7rem;
     border-radius: 2em;
-    color: #ffffff;
-    font-family: 'Gilroy', sans-serif;
-    letter-spacing: 0.1rem;
     transition-duration: .5s;
     cursor: pointer;
     margin: 0 auto;
+}
+
+.btn-box a{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 .btn-box:hover{
@@ -430,4 +435,209 @@ header .link-entrar a{
 .footer-box .btn{
     display: flex;
     justify-content: center;
+}
+
+/* PÁGINA DE CADASTRO */
+
+.conteudo{
+    margin: 0 auto;
+    padding-top: 2.8rem;
+}
+
+.conteudo .banner{
+    background-color: #241053;
+    border-radius: 0.8rem;
+    padding: 1.7rem 2.4rem;
+    max-width: 66rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.conteudo .banner .title-banner h6{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #F0F0F0;
+}
+
+.conteudo .banner .valor{
+    display: flex;
+    align-items: center;
+}
+
+.conteudo .banner .valor .price{
+    color: #F0F0F0;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.conteudo .conteudo-form .passo h2{
+    font-size: 1.6rem;
+    color: #F0F0F0;
+    text-align: center;
+    margin: 4rem 0 1.3rem 0;
+}
+
+.conteudo .conteudo-form .conta h1{
+    font-size: 3.2rem;
+    color: #F0F0F0;
+    text-align: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.conteudo .conteudo-form .description p{
+    padding: 1.6rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #F0F0F0;
+}
+
+/* FOMULÁRIO */
+
+.conteudo .conteudo-form .formulario{
+    padding-top: 0;
+    min-width: 65rem;
+    width: 100%;
+}
+
+.formulario form .nome-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CAMPO E NOME */
+
+.formulario form .nome-sobre .nome{
+    position: relative;
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.formulario form .nome-sobre .nome span{
+    position: absolute;
+    color: #acaaaa;
+    top: 3rem;
+    left: 0;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+
+.formulario form .nome-sobre .nome .name{
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border-bottom: 0.2rem solid #acaaaa;
+    padding-bottom: 0.8rem;
+    padding-top: 3rem;
+    width: 100%;
+    color: #ffffff;
+    transition: .2s;
+}
+
+.formulario form .nome-sobre .nome .name:focus{
+    border-bottom-color: #7b2abf;
+}
+
+/* CAMPO DE SOBRENOME */
+
+.formulario form .nome-sobre .sobrenome{
+    position: relative;
+    width: 50%;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario form .nome-sobre .sobrenome span{
+    position: absolute;
+    color: #acaaaa;
+    top: 3rem;
+    left: 0;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+
+.formulario form .senha p{
+    position: absolute;
+    color: #acaaaa;
+    top: 6.5rem;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.formulario form .nome-sobre .sobrenome .sname{
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border-bottom: 0.2rem solid #acaaaa;
+    padding-bottom: 0.8rem;
+    padding-top: 3rem;
+    width: 100%;
+    color: #ffffff;
+    transition: .2s;
+}
+
+.formulario form .nome-sobre .sobrenome .sname:focus{
+    border-bottom-color: #7b2abf;
+}
+
+
+/* EFEITO DE FLUATUAÇÃO NO SPAN DOS CAMPOS INPUT */
+
+.formulario form .nome-sobre .nome input:focus ~ span,
+.formulario form .nome-sobre .nome input:valid ~ span,
+.formulario form .nome-sobre .sobrenome input:focus ~ span,
+.formulario form .nome-sobre .sobrenome input:valid ~ span{
+    transform: translateY(-1.8rem);
+    font-size: 1.4rem;
+}
+/* =============================================== */
+
+.formulario .termos{
+    padding: 2rem;
+    background: linear-gradient(110.24deg,hsla(0,0%,100%,.076) 36.53%,hsla(0,0%,100%,.17));
+    border-radius: 0.8rem;
+}
+
+.formulario .termos p{
+    color: #F0F0F0;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.formulario .termos span{
+    color: #bac7ff;
+}
+
+.formulario .termos .btn-entrar{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 12px rgba(0,0,0,.2);
+}
+
+.conteudo .conteudo-form .formulario .termos .btn-entrar{
+    margin-bottom: 0;
+}
+
+.formulario .politica{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1.6rem 0;
+    color: #F0F0F0;
+}
+
+.formulario .politica span a{
+    color: #bac7ff;
+}
+
+/* RODAPÉ DA PÁGINA */
+
+.footer-cadastro{
+    margin-top: 4rem;
 }
