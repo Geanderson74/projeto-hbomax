@@ -5,11 +5,11 @@
     margin: 0;
     list-style: none;
     font-family: 'Gilroy-normal', sans-serif;
-    overflow-x: hidden;
 }
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 img{
@@ -31,6 +31,12 @@ a{
 
 body{
     background-image: url(../img/bg-gradient.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* CABEÇALHO DA PÁGINA */
@@ -95,6 +101,11 @@ section .grid .formulario form .email .mail{
     padding-top: 3rem;
     width: 100%;
     color: #ffffff;
+    transition: .2s;
+}
+
+section .grid .formulario form .email .mail:focus{
+    border-bottom-color: #7b2abf;
 }
 
 section .grid .formulario form .email span{
@@ -133,6 +144,11 @@ section .grid .formulario form .senha .password{
     padding-top: 3rem;
     width: 100%;
     color: #ffffff;
+    transition: .2s;
+}
+
+section .grid .formulario form .senha .password:focus{
+    border-bottom-color: #7b2abf;
 }
 
 /* ICONE DO CAMPO SENHA */
@@ -201,6 +217,10 @@ section .grid .formulario .btn-provedor:hover{
 
 /* SEÇÃO INFORMAÇÕES */
 
+.info{
+    flex-grow: 1;
+}
+
 .links{
     margin-top: 6rem;
     display: flex;
@@ -229,11 +249,8 @@ section .grid .formulario .btn-provedor:hover{
 /* RODAPÉ DA PÁGINA */
 
 footer{
-    background-color: #0f0535;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 35px 0;
+    background-color: #07032a;
+    padding: 3.8rem 0;
 }
 
 .link-footer{
@@ -244,7 +261,7 @@ footer{
 .link-footer ul{
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 2.2rem;
 }
 
 .link-footer ul li a{
@@ -258,4 +275,159 @@ footer{
 
 .link-footer ul li a .globo-rodape{
     font-size: 1rem;
+}
+
+/* PÁGINA DE PLANOS */
+
+/* CABEÇALHO DA PÁGINA PLANOS */
+
+header{
+    position: relative;
+}
+
+header .link-entrar a{
+    color: #bac7ff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: absolute;
+    right: 2.5rem;
+    top: 40%;
+}
+
+/* SEÇÃO DE TITULOS DA PÁGINA PLANOS */
+
+.title-plan{
+    text-align: center;
+    color: #F0F0F0;
+}
+
+.title-plan .secondary-title h2{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    margin: 4rem 0 1.3rem 0;
+}
+
+.title-plan .primary-title h1{
+    font-size: 3.2rem;
+    margin-top: 1.9rem;
+}
+
+.title-plan .descricao p{
+    font-size: 1.4rem;
+    margin: 1.6rem 0 1.6rem 0;
+}
+
+/* SEÇÃO PLANOS E PREÇOS */
+
+/* CLASSE PADRÃO PARA BOX DE PREÇOS */
+.box-plan{
+    background: linear-gradient(180deg,hsla(0,0%,100%,.12),hsla(0,0%,100%,0));
+    border-radius: 0.8rem;
+    border: 0.1rem solid hsla(0,0%,100%,.3);
+    margin: 2rem 1.5rem 0;
+    padding: 4rem 3.2rem;
+    width: 40rem;
+    color: #ffffff;
+}
+/* ==================================== */
+
+/* CLASSE PADRÃO PARA O BOTÃO BOX DE PREÇOS */
+.btn-box{
+    background-color: #7b2abf;
+    font-size: 1.6rem;
+    padding: 1.8rem 7rem;
+    border-radius: 2em;
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    letter-spacing: 0.1rem;
+    transition-duration: .5s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn-box:hover{
+    background-color: #9420f3;
+}
+/* ==================================== */
+
+.section-planos{
+    margin-bottom: 4rem;
+}
+
+.planos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 67%;
+    margin: 0 auto;
+}
+
+/* HEADER-BOX */
+.box-plan .header-box .title-box h3{
+    font-size: 3.2rem;
+}
+
+.box-plan .header-box .preco-box{
+    padding-bottom: 4rem;
+}
+
+.box-plan .header-box .preco-especial{
+    padding-bottom: 1rem;
+}
+
+.box-plan .header-box .preco-box h4{
+    font-size: 2.4rem;
+}
+
+.box-plan .header-box .preco-box h4 span{
+    font-size: 1.8rem;
+    color: #ffffffbf;
+    font-weight: 100;
+}
+
+.box-plan .header-box .preco-box .economize{
+    color: #adbefe;
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding-top: 0.7rem;
+}
+
+/* BODY-BOX */
+.body-box{
+    padding: 2rem 0 4rem 0rem;
+    font-size: 1.6rem;
+}
+
+.body-box ul li{
+    padding: 0.5rem 0rem 0;
+    color: #ffffffbf;
+}
+
+/* FOOTER-BOX */
+.footer-box{
+    font-size: 1.6rem;
+    border-top: 1px solid #ffffffbf;
+}
+
+.footer-box .dispositivo-box{
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-box .dispositivo-box i{
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-box .dispositivo-box i:nth-child(2){
+    font-size: 1.2rem;
+}
+
+.footer-box .btn{
+    display: flex;
+    justify-content: center;
 }
