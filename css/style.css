@@ -34,6 +34,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: #1b0554;
+    background-position: top center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -640,4 +642,100 @@ header .link-entrar a{
 
 .footer-cadastro{
     margin-top: 4rem;
+}
+
+
+
+/* ============ MEDIA QUERIES ============== */
+@media (max-width: 1305px){
+    /* ========== PÁGINA PLANOS.HTML ========= */
+
+    /* SEÇÃO PLANOS E PREÇOS */
+    .section-planos .planos{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+
+    /* FORMULÁRIO PÁGINA LOGIN INDEX.HTML*/
+    .mb-form{
+        padding: 0 1.2rem;
+    }
+
+    section .grid .title{
+        margin-top: 2rem;
+    }
+
+    section .grid .formulario .btn-provedor{
+        font-size: 1.6rem;
+    }
+
+    /* RODAPÉ */
+    footer{
+        padding: 2rem 0;
+    }
+    footer .link-footer ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link-footer ul li a{
+        font-size: 1.4rem;
+    }
+
+    /* ====== PÁGINA PLANOS.HTML ======*/
+
+    /* SEÇÃO PLANOS E PREÇOS */
+    .section-planos .planos{
+        width: 100%;
+    }
+
+    .section-planos .planos .box-plan{
+        background: transparent;
+        padding: 4rem 2rem 0rem 2rem;
+    }
+
+    .section-planos .planos .box-plan .footer-box .btn{
+        display: none;
+    }
+
+    .section-planos{
+        position: relative;
+        margin-bottom: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-planos::after{
+        content: "QUERO ESTE PLANO";
+        position: absolute;
+        background-color: #7b2abf;
+        font-size: 1.6rem;
+        padding: 1.5rem 5rem;
+        border-radius: 2em;
+        transition-duration: .5s;
+        cursor: pointer;
+        color: #F0F0F0;
+        font-weight: 600;
+        margin-top: 2rem;
+        bottom: -8rem;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    /* SEÇÃO INFORMAÇÕES PÁGINA LOGIN INDEX.HTML*/
+    .info{
+        margin-bottom: 2rem;
+    }
+
+    /* ====== PÁGINA PLANOS.HTML ======*/
+
+    /* SEÇÃO PLANOS E PREÇOS */
+    .section-planos .planos .box-plan{
+        width: 34rem;
+    }
+
 }
